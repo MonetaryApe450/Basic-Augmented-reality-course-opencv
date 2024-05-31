@@ -6,7 +6,7 @@ import numpy as np
 CHESS_BOARD_DIM = (9, 6)
 
 # The size of Square in the checker board.
-SQUARE_SIZE = 14  # millimeters
+SQUARE_SIZE = 17  # millimeters
 
 # termination criteria
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 30, 0.001)
@@ -43,7 +43,7 @@ files = os.listdir(image_dir_path)
 for file in files:
     print(file)
     imagePath = os.path.join(image_dir_path, file)
-    # print(imagePath)
+    print(imagePath)
 
     image = cv.imread(imagePath)
     grayScale = cv.cvtColor(image, cv.COLOR_BGR2GRAY)

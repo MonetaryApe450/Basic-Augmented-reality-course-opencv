@@ -12,7 +12,7 @@ dist_coef = calib_data["distCoef"]
 r_vectors = calib_data["rVector"]
 t_vectors = calib_data["tVector"]
 
-MARKER_SIZE = 8  # centimeters
+MARKER_SIZE = 3 # centimeters
 
 marker_dict = aruco.Dictionary_get(aruco.DICT_4X4_50)
 
